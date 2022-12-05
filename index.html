@@ -89,11 +89,11 @@
           <div class="accordion accordion-flush" id="accordionFlush1">
             <div class="accordion-item">
 
-              <b><p>Today is <u><label id='today'></label></u></p></b>
+              <b><p  class="alert alert-primary" style="text-center">Nous sommes le <u><label id='today'></label></u></p></b>
               <br>
               <py-script>
                 import datetime as dt
-                Element('today').write(dt.date.today().strftime('%A %B %d, %Y'))
+                Element('today').write(dt.datetime.now().strftime("%m/%d/%Y, %H:%M:%S"))
           
               </py-script>
               <h2 class="accordion-header" id="flush-headingOne">
